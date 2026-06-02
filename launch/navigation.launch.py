@@ -13,6 +13,7 @@ def generate_launch_description():
     bt_navigator_yaml = os.path.join(pkg_dir, 'config', 'bt_navigator.yaml')
     planner_yaml = os.path.join(pkg_dir, 'config', 'planner_server.yaml')
     recovery_yaml = os.path.join(pkg_dir, 'config', 'recovery.yaml')
+    filters_yaml = os.path.join(pkg_dir, 'config', 'filters.yaml')
 
     
     return LaunchDescription([     
@@ -23,6 +24,25 @@ def generate_launch_description():
             output='screen',
             parameters=[{'use_sim_time': True}, 
                         {'yaml_filename':map_file}]
+        ),
+
+        Node(
+            package='nav2_map_server',
+            executable='map_server',
+            name='filter_mask_server',
+            output='screen',
+            emulate_tty=True,
+            parameters=[filters_yaml]
+        ),
+
+
+        Node(
+            package='nav2_map_server',
+            executable='costmap_filter_info_server',
+            name='costmap_filter_info_server',
+            output='screen',
+            emulate_tty=True,
+            parameters=[filters_yaml]
         ),
             
         Node(
@@ -78,7 +98,9 @@ def generate_launch_description():
                                         'planner_server',
                                         'controller_server',
                                         'behavior_server',
-                                        'bt_navigator']}]),
+                                        'bt_navigator',
+                                        'filter_mask_server',
+                                        'costmap_filter_info_server']}]),
         
         Node(
             package='rviz2',

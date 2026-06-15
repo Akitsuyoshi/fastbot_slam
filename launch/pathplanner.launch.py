@@ -19,7 +19,7 @@ def generate_launch_description():
             output='screen',
             parameters=[controller_yaml],
             remappings=[
-                ('/cmd_vel', '/fastbot_1/cmd_vel'),
+                ('/cmd_vel', '/fastbot/cmd_vel'),
             ]),
 
         Node(

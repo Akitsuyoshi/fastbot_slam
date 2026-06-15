@@ -13,9 +13,9 @@ behavior_server:
       minimum_speed: 0.025
     wait:
       plugin: "nav2_behaviors/Wait"
-    local_frame: fastbot_1_odom
+    local_frame: fastbot_odom
     global_frame: map
-    robot_base_frame: fastbot_1_base_link
+    robot_base_frame: fastbot_base_link
     transform_timeout: 0.2
     use_sim_time: true
     simulate_ahead_time: 2.0

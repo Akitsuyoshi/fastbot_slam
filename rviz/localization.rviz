@@ -113,7 +113,7 @@ Visualization Manager:
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Best Effort
-        Value: /fastbot_1/scan
+        Value: /fastbot/scan
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
@@ -143,7 +143,7 @@ Visualization Manager:
         Durability Policy: Volatile
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /fastbot_1_robot_description
+        Value: /fastbot_robot_description
       Enabled: true
       Links:
         All Links Enabled: true
@@ -151,26 +151,26 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        fastbot_1_base_link:
+        fastbot_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fastbot_1_camera:
+        fastbot_camera:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        fastbot_1_lidar:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fastbot_1_wheel_left:
+        fastbot_lidar:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fastbot_1_wheel_right:
+        fastbot_wheel_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fastbot_wheel_right:
           Alpha: 1
           Show Axes: false
           Show Trail: false

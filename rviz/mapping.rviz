@@ -76,17 +76,17 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        fastbot_1_base_link:
+        fastbot_base_link:
           Value: true
-        fastbot_1_camera:
+        fastbot_camera:
           Value: true
-        fastbot_1_lidar:
+        fastbot_lidar:
           Value: true
-        fastbot_1_odom:
+        fastbot_odom:
           Value: true
-        fastbot_1_wheel_left:
+        fastbot_wheel_left:
           Value: true
-        fastbot_1_wheel_right:
+        fastbot_wheel_right:
           Value: true
         map:
           Value: true
@@ -97,15 +97,15 @@ Visualization Manager:
       Show Names: false
       Tree:
         map:
-          fastbot_1_odom:
-            fastbot_1_base_link:
-              fastbot_1_camera:
+          fastbot_odom:
+            fastbot_base_link:
+              fastbot_camera:
                 {}
-              fastbot_1_lidar:
+              fastbot_lidar:
                 {}
-              fastbot_1_wheel_left:
+              fastbot_wheel_left:
                 {}
-              fastbot_1_wheel_right:
+              fastbot_wheel_right:
                 {}
       Update Interval: 0
       Value: true
@@ -139,7 +139,7 @@ Visualization Manager:
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Best Effort
-        Value: /fastbot_1/scan
+        Value: /fastbot/scan
       Use Fixed Frame: true
       Use rainbow: true
       Value: true

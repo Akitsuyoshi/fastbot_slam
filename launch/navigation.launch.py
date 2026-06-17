@@ -22,7 +22,7 @@ def generate_launch_description():
             executable='map_server',
             name='map_server',
             output='screen',
-            parameters=[{'use_sim_time': True}, 
+            parameters=[{'use_sim_time': False}, 
                         {'yaml_filename':map_file}]
         ),
 
@@ -108,6 +108,6 @@ def generate_launch_description():
             name='rviz2',
             output='screen',
             arguments=['-d', rviz_file],
-            parameters=[{'use_sim_time': True}],
+            parameters=[{'use_sim_time': False}],
         ),
     ])
